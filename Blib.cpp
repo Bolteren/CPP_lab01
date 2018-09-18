@@ -4,6 +4,15 @@
 
 using namespace std;
 
+unsigned long int factorial(int n)
+{
+	if(n == 1 || n == 0)
+	{
+		return 1;
+	}
+	else n = n * factorial(n-1);
+}//предел числа н 12
+
 int srstr(string mas1)
 {
 	int rezult = 0;
